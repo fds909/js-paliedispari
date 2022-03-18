@@ -19,9 +19,13 @@ function isPalindrome(word) {
     return result;
 }
 
+let outputMsg = document.getElementById("palidroma");
+
 // test della funzione
 if (isPalindrome(word)) {
     console.log(`La stringa ${word} è palindroma.`);
+    outputMsg.innerHTML = `La stringa ${word} è palindroma.`;
 } else {
     console.log(`La stringa ${word} NON è palindroma.`);
+    outputMsg.innerHTML = `La stringa ${word} NON è palindroma.`;
 }
